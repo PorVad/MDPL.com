@@ -1,0 +1,130 @@
+body {
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.wrapper .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  text-align: center;
+}
+.wrapper .content .header {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#53ADE0), to(rgba(95, 137, 160, 0)));
+  background: linear-gradient(0deg, #53ADE0 0%, rgba(95, 137, 160, 0) 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 24px;
+}
+.wrapper .content .back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+.wrapper .content .main {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+  font-size: 17px;
+}
+.wrapper .content .main textarea.formInput {
+  min-height: 120px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 5px 0;
+  resize: vertical;
+  font-size: 18px;
+}
+.wrapper .content .main .formInput.error {
+  -webkit-box-shadow: 0 0 15px red;
+          box-shadow: 0 0 15px red;
+}
+.wrapper .content .main input {
+  border-radius: 10px;
+  padding: 5px;
+  width: 120px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.wrapper .content .main input:focus {
+  width: 220px;
+}
+.wrapper .content .submit-button {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 7px;
+  width: 100px;
+  background-color: #53ADE0;
+  border: none;
+  border-radius: 14px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.wrapper .content .submit-button a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: all 0.5 ease 0s;
+  transition: all 0.5 ease 0s;
+}
+.wrapper .content .submit-button:hover {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 3px 3px 15px 4px rgba(0, 0, 0, 0.76);
+          box-shadow: 3px 3px 15px 4px rgba(0, 0, 0, 0.76);
+}
+.wrapper .content .submit-button:hover a {
+  color: white;
+}
+.wrapper .footer {
+  margin-top: auto;
+  padding: 0 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#53ADE0), to(rgba(95, 137, 160, 0)));
+  background: linear-gradient(0deg, #53ADE0 0%, rgba(95, 137, 160, 0) 100%);
+}
+.wrapper .footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.wrapper .footer li a {
+  text-decoration: none;
+  color: black;
+}
+.wrapper .footer li img {
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: relative;
+  left: -30px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.wrapper .footer li:hover img {
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  position: relative;
+  left: 0;
+}

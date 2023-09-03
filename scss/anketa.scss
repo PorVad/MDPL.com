@@ -1,0 +1,126 @@
+body{
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    overflow: hidden;
+
+    .content{
+        flex: 1 1 auto;
+        width: 100%;
+        text-align: center;
+
+        .header{
+            margin-top: 50px;
+            margin-bottom: 30px;
+            padding: 10px 0;
+            background: linear-gradient(0deg, #53ADE0 0%, rgba(95, 137, 160, 0.00) 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 24px;
+        }
+
+        .back{
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+
+        .main{
+            border: 1px solid black;
+            margin: 20px;
+            padding: 20px;
+            font-size: 17px;
+
+            textarea.formInput{
+                min-height: 120px;
+                width: 100%;
+                border: 2px solid black;
+                border-radius: 10px;
+                margin: 5px 0;
+                resize: vertical;
+                font-size: 18px;
+            }
+
+            .formInput.error{
+                box-shadow: 0 0 15px red;
+            }
+
+            input{
+                border-radius: 10px;
+                padding: 5px;
+                width: 120px;
+                transition: all 0.5s ease 0s;
+            }
+
+            input:focus{
+                width: 220px;
+            }
+
+        }
+
+        .submit-button{
+            font-size: 18px;
+            margin: 10px 0;
+            padding: 7px;
+            width: 100px;
+            background-color: #53ADE0;
+            border: none;
+            border-radius: 14px;
+            transition: all 0.5s ease 0s;
+
+            a{
+                text-decoration: none;
+                color: black;
+                transition: all 0.5 ease 0s;
+            }
+        }
+
+        .submit-button:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 3px 3px 15px 4px rgba(0,0,0,0.76);
+
+            a{
+                color: white;
+            }
+        }
+    }
+
+    .footer{
+        margin-top: auto;
+        padding: 0 15px;
+        background: linear-gradient(0deg, #53ADE0 0%, rgba(95, 137, 160, 0.00) 100%);
+
+        li{
+            display: flex;
+            align-items: center;
+            transition: all 0.5s ease 0s;
+
+            a{
+                text-decoration: none;
+                color: black;
+            }
+
+            img{
+                visibility: hidden;
+                transform: scale(0);
+                position: relative;
+                left: -30px;
+                transition: all 0.5s ease 0s;
+            }
+        }
+
+        li:hover img{
+            visibility: visible;
+            transform: scale(1);
+            position: relative;
+            left: 0;
+        }
+    }
+}

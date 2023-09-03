@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/anketa.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <header class="header">
+                    <img src="/img/flag.jpg" alt="Flag" width="230px">
+                    <p><strong>Вітаю вас на сайті МДПЛ</strong></p>
+                </header>
+                <main class="main">
+                    <h2>Заява</h2>
+                    <div class="form">
+                        <form action="#" id="form" class="formBody">
+                            <div class="formItem">
+                                <label for="forNameSurname" class="formLabel">Я, <input type="text" id="formNameSurname" name="namesurname" class="formInput req" placeholder="Прізвище та Ім'я...">, прошу прийняти мене в члени Незалежної Республіки МДПЛ.
+                                    Зі змістом Статуту організації ознайомлений і зобов’язуюсь їх виконувати.</label>
+                            </div>
+                            <h2>Анкета громадянина Незалежної Республіки МДПЛ</h2>
+                            <div class="formItem">
+                                <label for="forDreamNameSurname" class="formLabel">Прізвище та Ім’я члена Нензалежної Республіки МДПЛ </label>
+                                <input type="text" id="formDreamNameSurname" name="dreamnamesurname" class="formInput req" placeholder="Вигадані">
+                            </div>
+                            <br>
+                            <div class="formItem">
+                                <label for="forBirthDay" class="formLabel">Дата народження </label>
+                                <input type="text" id="formBirthDay" name="birthday" class="formInput req" placeholder="Вигадана">
+                            </div>
+                            <br>
+                            <div class="formItem">
+                                <label for="forPurpose" class="formLabel">Мета вступу до МДПЛ: </label>
+                                <textarea id="formPurpose" name="purpose" class="formInput req"></textarea>
+                            </div>
+                            <br>
+                            <div class="formItem">
+                                <label for="forIdea" class="formLabel">Ідеї та проекти над якими Ви працюєте, або хочете працювати та ділитися досвідом: </label>
+                                <textarea id="formIdea" name="idea" class="formInput req"></textarea>
+                            </div>
+                            <br>
+                            <div class="formItem">
+                                <label for="forPost" class="formLabel">Посада, яку б ви хотіли отримати: </label>
+                                <input type="text" id="formPost" name="post" class="formInput req">
+                            </div>
+                            <br>
+                        </form>
+                    </div>
+                </main>
+                <button class="submit-button" id="back-btn"><a href="/index.html">Назад</a></button>
+                <button type="submit" class="submit-button" id="submit-btn" onclick="SendMail()">Submit</button>
+                <footer class="footer"></footer>
+            </div>
+            <footer class="footer">
+                <p>
+                    <b>
+                        YouTube:
+                        <ul>
+                            <li><a href="https://www.youtube.com/@Vasya_z_Privokzalnoii" target="_blank">Vasya Kopcheniy</a><img src="/img/youtube.png" alt="You Tube" width="50px"></li>
+                            <li><a href="https://www.youtube.com/@Based_MDPL " target="_blank">Based_MDPL</a><img src="/img/youtube.png" alt="You Tube" width="50px"></li>
+                            <li><a href="https://www.youtube.com/@andriylgamer" target="_blank">Антон Мельник</a><img src="/img/youtube.png" alt="You Tube" width="50px"></li>
+                            <li><a href="https://www.youtube.com/@neyzes5481" target="_blank">Микола Потник</a><img src="/img/youtube.png" alt="You Tube" width="50px"></li>
+                        </ul>
+                    </b>
+                </p>
+            </footer>
+        </div>
+
+        <script src="/js/anketa.js"></script>
+        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("2BdnuNIMx3H216kfT");
+            })();
+        </script>
+    </body>
+</html>
